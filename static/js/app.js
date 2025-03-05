@@ -9,6 +9,16 @@ $(document).ready(function () {
       return;
     }
 
+    fetch('/translate', {
+      method: 'POST',
+      body: JSON.stringify({
+        sourceLang, targetLang
+      })
+    }).then(res => res.text())
+      .then(res => {
+      $('#output').val(res)
+    })
+
 
   });
 });
