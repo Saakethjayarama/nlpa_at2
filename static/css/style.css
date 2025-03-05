@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.box {
+  flex: 1;
+  min-width: 300px;
+}
+
+select,
+textarea {
+  width: 100%;
+  margin: 5px 0px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+textarea {
+  height: 150px;
+}
