@@ -1,8 +1,8 @@
 $(document).ready(function () {
   $("#translateBtn").click(function () {
-    var text = $("#sourceText").val();
-    var sourceLang = $("#sourceLang").val();
-    var targetLang = $("#targetLang").val();
+    const text = $("#sourceText").val();
+    const sourceLang = $("#sourceLang").val();
+    const targetLang = $("#targetLang").val();
 
     if (text.trim() === "") {
       alert("Please enter text to translate.");
@@ -18,7 +18,6 @@ $(document).ready(function () {
       .then(res => {
       $('#output').val(res)
     })
-
 
   });
 });
